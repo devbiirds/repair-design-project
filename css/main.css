@@ -1,5 +1,162 @@
-* {
-  margin: 0;
-  padding: 0; }
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url(/assets/fonts/futurademic.otf); }
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url(/assets/fonts/futurabookc.otf); }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: #131313;
+  display: flex;
+  justify-content: center; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  border: 1px solid red; }
+
+.header {
+  display: flex; }
+  .header .left_item {
+    font-family: "FuturaDemiC";
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #e3b873;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .left_item p {
+      transform: rotate(90deg); }
+    .header .left_item:after {
+      position: absolute;
+      content: "";
+      height: 51px;
+      margin-top: 80px;
+      border: 0.5px solid #e3b873;
+      transform: rotate(900deg); }
+  .header .headerbox {
+    width: 100%;
+    border: 1px solid red; }
+    .header .headerbox__item1 {
+      height: 10vh;
+      border: 1px solid red;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .header .headerbox__item1__logotext {
+        font-family: "FuturaDemiC";
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #e3b873;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .header .headerbox__item1__navbar {
+        width: 50%;
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-family: "FuturaBookC";
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff; }
+        .header .headerbox__item1__navbar .navbar__item:hover {
+          color: #e3b873; }
+      .header .headerbox__item1__info {
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .header .headerbox__item1__info--tell {
+          font-family: "FuturaDemiC";
+          font-size: 14px;
+          line-height: 16px;
+          color: #e3b873; }
+        .header .headerbox__item1__info--call {
+          height: 37px;
+          width: 161px;
+          font-family: "FuturaDemiC";
+          font-size: 13px;
+          line-height: 15px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #ffffff;
+          background: #e3b873;
+          border-radius: 2px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .header .headerbox__item1__info--call:hover {
+            color: black;
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
+    .header .headerbox__itembg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      height: 707px;
+      background: url(/assets/img/banner_image.png) no-repeat center; }
+      .header .headerbox__itembg__textbox {
+        height: 45%;
+        border: 1px solid red;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        .header .headerbox__itembg__textbox--text_upper {
+          border: 1px solid red;
+          display: flex;
+          justify-content: center;
+          font-family: "Yeseva One";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 40px;
+          line-height: 53px;
+          text-transform: uppercase;
+          color: #ffffff; }
+        .header .headerbox__itembg__textbox--text_lower {
+          border: 1px solid red;
+          display: flex;
+          justify-content: start;
+          width: 72.2%;
+          font-family: "FuturaBookC";
+          font-size: 22px;
+          line-height: 30px;
+          color: #ffffff; }
+        .header .headerbox__itembg__textbox--buttons {
+          border: 1px solid red;
+          width: 72.2%;
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-around;
+          text-transform: uppercase;
+          font-family: "FuturaDemiC";
+          font-size: 13px;
+          line-height: 15px;
+          color: #ffffff; }
+          .header .headerbox__itembg__textbox--buttons .buttons--that {
+            width: 207px;
+            height: 51px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffffff;
+            border-radius: 2px; }
+            .header .headerbox__itembg__textbox--buttons .buttons--that:hover {
+              background: #e3b873;
+              box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+              border: 1px solid rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=main.css.map */
