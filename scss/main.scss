@@ -3,9 +3,14 @@ a {
   text-decoration: none;
   color: white;
 }
+svg path {
+  stroke:inherit;
+  stroke-width:inherit;
+  fill:inherit;
+  }
 .main {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: #131313;
   display: flex;
   justify-content: center;
@@ -14,15 +19,17 @@ a {
   width: 100%;
   max-width: 1440px;
   border: 1px solid red;
+  overflow: hidden;
 }
 .header {
   display: flex;
-
+  height: 100vh;
+  max-height: 837px;
   .left_item {
     font-family: "FuturaDemiC";
     font-size: 14px;
     line-height: 16px;
-    text-align: center;
+
     color: #e3b873;
     text-transform: uppercase;
     display: flex;
@@ -35,17 +42,16 @@ a {
       position: absolute;
       content: "";
       height: 51px;
-      margin-top:80px;
+      margin-top: 80px;
       border: 0.5px solid #e3b873;
-      transform: rotate(900deg);
     }
   }
   .headerbox {
     width: 100%;
-    border: 1px solid red;
+    height: 100%;
     &__item1 {
       height: 10vh;
-      border: 1px solid red;
+
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -61,10 +67,9 @@ a {
       }
       &__navbar {
         width: 50%;
-        border: 1px solid red;
+
         display: flex;
         justify-content: space-between;
-        text-transform: uppercase;
         font-family: "FuturaBookC";
         font-size: 14px;
         line-height: 16px;
@@ -115,22 +120,24 @@ a {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      overflow: hidden;
       width: 100%;
-      height: 707px;
+      height: 90%;
+      max-height: 707px;
+
       background: url(/assets/img/banner_image.png) no-repeat center;
       &__textbox {
-        height: 45%;
-        border: 1px solid red;
+        height: 35%;
         width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-evenly;
 
-        &--text_upper {
-          border: 1px solid red;
+        &--text_lower {
+          width: 80%;
+
           display: flex;
-          justify-content: center;
+          justify-content: start;
           font-family: "Yeseva One";
           font-style: normal;
           font-weight: normal;
@@ -138,44 +145,263 @@ a {
           line-height: 53px;
           text-transform: uppercase;
           color: #ffffff;
+          align-self: center;
         }
-        &--text_lower {
-          border: 1px solid red;
+        &--text_upper {
+          width: 80%;
+
           display: flex;
           justify-content: start;
-          width: 72.2%;
+          align-self: center;
           font-family: "FuturaBookC";
           font-size: 22px;
           line-height: 30px;
           color: #ffffff;
         }
-        &--buttons {
-          border: 1px solid red;
-          width: 72.2%;
-          margin-top: 20px;
+      }
+      &--buttons {
+        width: 47%;
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-evenly;
+        text-transform: uppercase;
+        font-family: "FuturaDemiC";
+        font-size: 13px;
+        line-height: 15px;
+        color: #ffffff;
+        .buttons--that {
+          width: 207px;
+          height: 51px;
           display: flex;
-          justify-content: space-around;
-          text-transform: uppercase;
-          font-family: "FuturaDemiC";
-          font-size: 13px;
-          line-height: 15px;
-          color: #ffffff;
-          .buttons--that {
-            width: 207px;
-            height: 51px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ffffff;
-            border-radius: 2px;
-            &:hover {
-              background: #e3b873;
-              box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-              border: 1px solid rgba(0, 0, 0, 0.3);
-            }
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #ffffff;
+          border-radius: 2px;
+          &:hover {
+            background: #e3b873;
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.3);
           }
         }
       }
     }
+  }
+}
+.scrollbox {
+  margin-top: 4vh;
+  height: 1074px;
+  display: grid;
+  grid-template-areas:
+    "post-1 post-2 "
+    "post-3 post-2 "
+    "post-4 post-2 "
+    "post-5 post-2";
+  grid-template-rows: 0.15fr 0fr 0.3fr 0.3fr;
+  grid-template-columns: 0.7fr 1fr;
+}
+.scrollbox__item1 {
+  grid-area: post-1;
+  display: flex;
+  align-items: center;
+
+  margin-top: 5vh;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+
+  color: #e3b873;
+  p {
+    margin-left: 5vw;
+  }
+  .text--lower {
+    display: flex;
+
+    &::after {
+      margin-top: 55px;
+      content: "";
+      width: 5vw;
+      height: 1px;
+      background-color: #e3b873;
+    }
+  }
+}
+.scrollbox__item2 {
+  grid-area: post-2;
+  overflow: hidden;
+  
+  .scrollbox__item2--scroll {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scrollbox--nav {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 90px;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    .scroll_nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      a {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        &:hover {
+          border-bottom: 1px solid #e3b873;
+          color: #e3b873;
+        }
+      }
+    }
+  }
+  .scroll_image {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 1440px;
+    &__item1 {
+      width: 732px;
+      height: 482px;
+      background: url(/assets/img/scroll_image2.png) no-repeat;
+      background-size: cover;
+    }
+    &__item2 {
+      margin-left: 20px;
+      width: 679px;
+      height: 482px;
+      background: url(/assets/img/scroll_image1.png) no-repeat;
+    }
+  }
+}
+.scrollbox__item3 {
+  grid-area: post-3;
+
+  
+  .text--upper {
+    font-family: "FuturaBookC";
+    font-size: 18px;
+    line-height: 29px;
+    margin-left: 5vw;
+    color: #ffffff;
+    
+  }
+}
+.scrollbox__item4 {
+  grid-area: post-4;
+  .text--info{
+    
+    margin-left:5vw;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--column{
+     
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
+    &--row{
+     display: flex;
+     flex-direction: column; 
+     &:last-child{
+      margin-top:3vh;
+    }
+      
+    }
+    .name_data{
+      font-family: 'Yeseva One';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+text-transform: uppercase;
+
+color: #E3B873;
+    }
+    .data{
+      font-family: 'FuturaBookC';
+font-size: 15px;
+line-height: 20px;
+
+color: #FFFFFF;
+    }
+  }
+
+
+}
+.scrollbox__item5 {
+  grid-area: post-5;
+  height: 10vh;
+  
+  .item5--scroll{
+    
+    margin-left:5vw;
+    width: 35%;
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+ justify-content: space-between;
+  &--circle{
+    
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    a{
+      &:hover{
+        background: #FFFFFF;
+      }
+    }
+    .button_circle{
+      
+      height: 9px;
+      width: 9px;
+      background: rgba(255, 255, 255, 0.3);
+border-radius: 30px;
+    }
+  }
+  }
+
+  
+  .rigth_arrow{
+    display: flex;
+    align-items: center;
+  
+    .svg_arrow{
+     
+        fill:white;
+        transform: scale(-1, 1);
+        
+      &:hover{
+        stroke:black;
+        fill: black;
+      }
+    }
+    
+  }
+  .left_arrow{
+    
+  
+    .svg_arrow{
+     
+        fill:white;
+      &:hover{
+        stroke:black;
+        fill: black;
+      }
+    }
+    
   }
 }
