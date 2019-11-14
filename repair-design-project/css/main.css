@@ -608,7 +608,8 @@ label {
     width: 506px;
     height: 509px;
     background: #000;
-    margin-left: 20px; }
+    margin-left: 20px;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05); }
     .formbox .form__item {
       height: 100%;
       display: flex;
@@ -691,10 +692,9 @@ label {
       width: 213px; }
 
 .gallery {
-  height: 1100px;
+  height: 1400px;
   background: #fff;
-  display: flex;
-  align-items: center; }
+  display: flex; }
   .gallery__list {
     margin-left: 100px;
     width: 30%;
@@ -710,6 +710,7 @@ label {
       text-transform: uppercase;
       color: #e3b873; }
     .gallery__list--listitems {
+      margin-top: 30px;
       height: 60%;
       font-family: "Proxima Nova Light";
       font-size: 20px;
@@ -722,14 +723,42 @@ label {
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
+        .gallery__list--listitems ul li {
+          cursor: pointer; }
+        .gallery__list--listitems ul span:hover {
+          border-bottom: 1px solid #e3b873;
+          color: #e3b873; }
   .gallery__images {
-    width: 60%;
-    display: flex; }
+    width: 55%;
+    display: flex;
+    justify-content: space-between; }
+    .gallery__images .images_column {
+      width: 353px;
+      height: 100%; }
+      .gallery__images .images_column--item1 {
+        width: 354px;
+        height: 557px;
+        background: url(/assets/img/gallety_item1.png);
+        transform: translateY(-40px); }
+      .gallery__images .images_column--item2 {
+        width: 353px;
+        height: 349px;
+        background: url(/assets/img/gallery_item4.png); }
+      .gallery__images .images_column--item3 {
+        width: 353px;
+        height: 275px;
+        background: url(/assets/img/gallery_item2.png);
+        transform: translateY(-120px); }
+      .gallery__images .images_column--item4 {
+        width: 353px;
+        height: 625px;
+        background: url(/assets/img/gallery_item3.png);
+        transform: translateY(-80px); }
 
 .background_gallery {
   display: flex;
   margin-top: 200px;
-  height: 80%;
+  height: 864px;
   width: 1440px;
   background: url(/assets/img/galletu_bg.png) no-repeat;
   background-size: cover; }
