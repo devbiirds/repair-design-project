@@ -1,0 +1,1 @@
+{"version":3,"file":"clients.css","sources":["clients.scss"],"sourcesContent":[".clients{\r\n    .titlebox{\r\n        background: #fff;\r\n        &__text{\r\n            color:#000;\r\n        }\r\n    }\r\n}"],"names":[],"mappings":"AAAA,AACI,QADI,CACJ,SAAS,CAAA;EACL,UAAU,EAAE,IAAI,GAInB;EANL,AAGQ,QAHA,CAGC,eAAM,CAAA;IACH,KAAK,EAAC,IAAI,GACb"}
