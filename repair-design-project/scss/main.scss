@@ -1,4 +1,9 @@
 @import "fonts";
+@import './design_project.scss';
+@import './typesbox';
+@import './listwork.scss';
+@import './our-work.scss';
+@import './team.scss';
 a {
   text-decoration: none;
   color: white;
@@ -189,7 +194,7 @@ svg path {
 }
 .scrollbox {
   margin-top: 4vh;
-  height: 830px;
+  height: 1000px;
   display: grid;
   grid-template-areas:
     "post-1 post-2 "
@@ -197,7 +202,7 @@ svg path {
     "post-4 post-2 "
     "post-5 post-2"
     "post-6 post-6";
-  grid-template-rows: 0.15fr 0fr 0.3fr 0.1fr auto;
+  grid-template-rows: 200px 140px;
   grid-template-columns: 0.7fr 1fr;
 }
 .scrollbox__item1 {
@@ -233,7 +238,6 @@ svg path {
 .scrollbox__item2 {
   grid-area: post-2;
   overflow: hidden;
-
   .scrollbox__item2--scroll {
     display: flex;
     flex-direction: column;
@@ -333,65 +337,65 @@ svg path {
     }
   }
 }
+.scroll__arrow {
+  margin-top:70px;
+  margin-left: 5vw;
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &--circle {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    a {
+      &:hover {
+        background: #ffffff;
+      }
+    }
+    .button_circle {
+      height: 9px;
+      width: 9px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 30px;
+    }
+  }
+}
+
+.rigth_arrow {
+  display: flex;
+  align-items: center;
+
+  .svg_arrow {
+    fill: white;
+    transform: scale(-1, 1);
+
+    &:hover {
+      stroke: black;
+      fill: black;
+    }
+  }
+}
+.left_arrow {
+  .svg_arrow {
+    fill: white;
+    &:hover {
+      stroke: black;
+      fill: black;
+    }
+  }
+}
 .scrollbox__item5 {
   grid-area: post-5;
   height: 10vh;
-
-  .item5--scroll {
-    margin-left: 5vw;
-    width: 35%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    justify-content: space-between;
-    &--circle {
-      width: 30%;
-      display: flex;
-      justify-content: space-around;
-      a {
-        &:hover {
-          background: #ffffff;
-        }
-      }
-      .button_circle {
-        height: 9px;
-        width: 9px;
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 30px;
-      }
-    }
-  }
-
-  .rigth_arrow {
-    display: flex;
-    align-items: center;
-
-    .svg_arrow {
-      fill: white;
-      transform: scale(-1, 1);
-
-      &:hover {
-        stroke: black;
-        fill: black;
-      }
-    }
-  }
-  .left_arrow {
-    .svg_arrow {
-      fill: white;
-      &:hover {
-        stroke: black;
-        fill: black;
-      }
-    }
-  }
+  
 }
 .titlebox {
   height: 10vh;
   display: flex;
   flex-direction: column;
-
+color:#fff;
   align-items: center;
   &__text {
     width: 20vw;
@@ -401,10 +405,18 @@ svg path {
     font-size: 20px;
     line-height: 28px;
     text-transform: uppercase;
-    color: #ffffff;
+  
     display: flex;
     justify-content: center;
   }
+  &__description{
+    margin-top:20px;
+  font-family: 'FuturaBookC';
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center; 
+  color: #363636;
+}
   &__image {
     width: 200px;
     display: flex;
@@ -593,83 +605,13 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .typesbox {
-    margin-top: 30px;
-    display: flex;
-    width: 1236px;
-    height: 608px;
-
-    justify-content: space-between;
-    &__item {
-      height: 95%;
-      width: 392px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      &_first {
-        background: url(/assets/img/image_typesbox1.png) no-repeat;
-      }
-      &_second {
-        background: url(/assets/img/image_typesbox2.png) no-repeat;
-      }
-      &_third {
-        background: url(/assets/img/image_typesbox3.png) no-repeat;
-      }
-    }
-  }
   .titlebox {
     &__text {
       margin-top: 15px;
       color: black;
     }
   }
-  .listblock {
-    background: #fff;
-    width: 330px;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-    .cost {
-      cursor: pointer;
-      margin-top: 20px;
-      width: 228px;
-      height: 54px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Yeseva One";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 25px;
-      text-transform: uppercase;
-      color: #ffffff;
-      background: #e3b873;
-      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-    }
-    &__tittle {
-      margin-top: 10px;
-      margin-left: 34px;
-      font-family: "Yeseva One";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 25px;
-      color: #363636;
-    }
-    &__items {
-      margin-left: 50px;
-      font-family: "FuturaBookC";
-      font-size: 15px;
-      line-height: 25px;
-      color: #959595;
-      li {
-        list-style: disc;
-      }
-    }
-  }
+
 }
 .formbox {
   height: 720px;
@@ -836,7 +778,7 @@ label {
   }
 }
 .gallery {
-  height: 1400px;
+  height: 1200px;
   background: #fff;
   display: flex;
  

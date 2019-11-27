@@ -1,0 +1,35 @@
+.listwork{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    .typesbox{
+     
+        transform: translateY(-310px);      
+    
+        &__item {
+            justify-content: stretch;
+        }
+    }
+
+    .listblock{
+        margin-top:294px;
+        
+       .cost{
+           transform: translateY(25px);
+           box-shadow: none;
+        }
+        &--first{
+           
+            height: 211px;
+        }  
+        &--second{
+            height: 286px;
+        }
+       &--third{
+           height: 412px;
+       }
+       
+       
+    }
+    
+}

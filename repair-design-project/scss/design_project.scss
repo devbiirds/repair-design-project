@@ -1,0 +1,18 @@
+.project{
+    height: 470px;
+    background: #fff;
+    .titlebox{
+        color:#000;
+        background: #fff;
+        &__image {
+            &:before {
+              height: 2px;
+            }
+            &:after {
+              height: 2px;
+              
+            }
+          }
+          
+    }
+}

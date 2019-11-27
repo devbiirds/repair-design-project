@@ -1,0 +1,7 @@
+.listwork {
+  display: flex;
+  justify-content: center; }
+  .listwork .typesbox {
+    transform: translateY(-320px); }
+
+/*# sourceMappingURL=lisrwork.css.map */

@@ -1,0 +1,21 @@
+.listwork {
+  display: flex;
+  justify-content: center;
+  height: 450px; }
+  .listwork .typesbox {
+    transform: translateY(-310px); }
+    .listwork .typesbox__item {
+      justify-content: stretch; }
+  .listwork .listblock {
+    margin-top: 294px; }
+    .listwork .listblock .cost {
+      transform: translateY(25px);
+      box-shadow: none; }
+    .listwork .listblock--first {
+      height: 211px; }
+    .listwork .listblock--second {
+      height: 286px; }
+    .listwork .listblock--third {
+      height: 412px; }
+
+/*# sourceMappingURL=listwork.css.map */
