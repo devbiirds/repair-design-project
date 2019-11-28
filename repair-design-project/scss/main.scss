@@ -5,6 +5,8 @@
 @import './our-work.scss';
 @import './team.scss';
 @import './clients.scss';
+@import'./mapsbox.scss';
+@import './footer.scss';
 a {
   text-decoration: none;
   color: white;
@@ -24,7 +26,6 @@ svg path {
 .wrapper {
   width: 100%;
   max-width: 1440px;
-  border: 1px solid red;
   overflow: hidden;
 }
 .header {
