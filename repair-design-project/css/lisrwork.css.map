@@ -1,1 +1,0 @@
-{"version":3,"file":"lisrwork.css","sources":["lisrwork.scss"],"sourcesContent":[".listwork{\r\n    display: flex;\r\n    justify-content: center;\r\n    .typesbox{\r\n        transform: translateY(-320px);\r\n    }\r\n}"],"names":[],"mappings":"AAAA,AAAA,SAAS,CAAA;EACL,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM,GAI1B;EAND,AAGI,SAHK,CAGL,SAAS,CAAA;IACL,SAAS,EAAE,kBAAkB,GAChC"}
