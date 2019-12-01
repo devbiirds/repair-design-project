@@ -1,0 +1,53 @@
+
+.titlebox {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+  color:#fff;
+    align-items: center;
+    &__text {
+      white-space:nowrap;
+      width: 20vw;
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-transform: uppercase;
+    
+      display: flex;
+      justify-content: center;
+    }
+    &__description{
+      margin-top:20px;
+    font-family: 'FuturaBookC';
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center; 
+    color: #363636;
+  }
+    &__image {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      &:before {
+        content: "";
+        width: 33px;
+        height: 1px;
+        background: #e3b873;
+        margin-top: 16px;
+        margin-right: 10px;
+        border-radius: 30px;
+      }
+      &:after {
+        content: "";
+        margin-top: 16px;
+        margin-left: 10px;
+        width: 33px;
+        height: 1px;
+        background: #e3b873;
+        border-radius: 30px;
+      }
+    }
+  }

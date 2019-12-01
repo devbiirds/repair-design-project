@@ -1,17 +1,18 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
-const watch = require('gulp-watch');
+var gulp        = require('gulp');
+var browserSync = require('browser-sync').create();
+var reload      = browserSync.reload;
 
-gulp.task('sass-compile' ,function(){
-return gulp.src('./scss/**/main.scss')
-.pipe(sourcemaps.init())
-.pipe(sass().on('error',sass.logError))
-.pipe(sourcemaps.write('./'))
-.pipe(gulp.dest('./css/'))
-})
+// Save a reference to the `reload` method
 
-gulp.task('watch',function(){
-gulp.watch('./scss/**/*.scss',gulp.series('sass-compile'))
+// Watch scss AND html files, doing different things with each.
+gulp.task('browser-sync', function () {
 
-})
+    // Serve files from the root of this project
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+
+    gulp.watch("*.html").on("change", reload);
+});

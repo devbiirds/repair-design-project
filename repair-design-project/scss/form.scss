@@ -1,0 +1,216 @@
+
+label {
+    font-family: "FuturaBookC";
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    color: rgba(54, 54, 54, 0.5);
+  }
+  .submit {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 51px;
+    font-family: "FuturaDemiCTT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #e3b873;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    &:hover {
+      color: black;
+    }
+  }
+  .titlebox.first_elem {
+    margin-top: 80px;
+  }
+  .before_types {
+    width: 100%;
+    height: 670px;
+    background: #fff;
+  }
+  .item_types {
+    width: 100%;
+    height: 800px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titlebox {
+      &__text {
+        margin-top: 15px;
+        color: black;
+      }
+    }
+  
+  }
+  .formbox {
+    height: 720px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    .circlefirst {
+      margin-top: 118px;
+      margin-left: 350px;
+    }
+    .circlesecond {
+      margin-top: 70px;
+      margin-left: 430px;
+    }
+    .circlethird {
+      margin-top: 120px;
+      margin-left: 450px;
+    }
+    .circlefourth {
+      margin-top: 120px;
+      margin-left: 385px;
+    }
+    &__circle_list {
+      width: 800px;
+      height: 691px;
+      background: url(/assets/img/bg_circlelist.png) no-repeat;
+    }
+    .circle__list--item {
+      display: flex;
+      align-items: center;
+    }
+    .circle__list {
+      &--circle {
+        width: 41.76px;
+        height: 41.76px;
+        background: #e3b873;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+        border-radius: 30px;
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+      }
+      &--text {
+        font-family: "FuturaMediumC";
+        font-size: 18px;
+        line-height: 21px;
+        margin-left: 10px;
+        color: #363636;
+      }
+    }
+    .form {
+      width: 506px;
+      height: 509px;
+      background: #000;
+      margin-left: 20px;
+      box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+      &__item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &--tittle {
+          font-family: "FuturaDemiCTT";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 25px;
+          text-align: center;
+  
+          color: #ffffff;
+        }
+      }
+    }
+    .inform {
+      width: 80%;
+      background: #000;
+  
+      &::-webkit-input-placeholder {
+        font-family: "FuturaMediumC";
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+      }
+      &::-moz-placeholder {
+        font-family: "FuturaMediumC";
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+      }
+      &:-moz-placeholder {
+        font-family: "FuturaMediumC";
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+      }
+      &:-ms-input-placeholder {
+        font-family: "FuturaMediumC";
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+      }
+    }
+    .videobox__form--input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      &::after {
+        content: "";
+        margin-top: 5px;
+        width: 408px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.15);
+      }
+    }
+    .videobox__check {
+      justify-content: flex-start;
+      width: 80%;
+      &--text {
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+    }
+    label {
+      width: 80%;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .email__input {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      &::after {
+        content: "";
+        margin-top: 5px;
+        width: 408px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.15);
+      }
+    }
+    .button--call {
+      display: flex;
+      justify-content: flex-end;
+      width: 90%;
+      .submit {
+        font-family: "FuturaDemiCTT";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 19px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 213px;
+      }
+    }
+  }
+  

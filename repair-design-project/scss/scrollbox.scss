@@ -1,0 +1,234 @@
+.scrollbox {
+    margin-top: 4vh;
+    height: 1000px;
+    display: grid;
+    grid-template-areas:
+      "post-1 post-2 "
+      "post-3 post-2 "
+      "post-4 post-2 "
+      "post-5 post-2"
+      "post-6 post-6";
+    grid-template-rows: 200px 140px;
+    grid-template-columns: 0.7fr 1fr;
+  }
+  .scrollbox__item1 {
+    grid-area: post-1;
+    display: flex;
+    align-items: center;
+  
+    margin-top: 5vh;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+  
+    color: #e3b873;
+    p {
+      margin-left: 5vw;
+    }
+    .text--lower {
+      display: flex;
+  
+      &::after {
+        margin-top: 55px;
+        content: "";
+        width: 5vw;
+        height: 1px;
+        background-color: #e3b873;
+      }
+    }
+  }
+  .scrollbox__item2 {
+    grid-area: post-2;
+    overflow: hidden;
+    .scrollbox__item2--scroll {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .scrollbox--nav {
+      display: flex;
+      align-items: center;
+      width: 70%;
+      height: 90px;
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.3);
+      .scroll_nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a {
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          &:hover {
+            border-bottom: 1px solid #e3b873;
+            color: #e3b873;
+          }
+        }
+      }
+    }
+    .scroll_image {
+        overflow: hidden;
+        .button_arrow{
+            display: none;
+         
+            cursor: pointer;
+            height: 54px;
+            width: 54px;
+          
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #E3B873;
+      box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+      img{
+        width: 9px;
+        height: 16px;
+      }
+          }
+          .button_arrow.rigth{
+              display: flex;
+            transform: translateY(200px);
+           
+        
+            img{
+
+            
+            transform: rotate(-180deg)
+            }  
+        }
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      width: 1440px;
+      &__item1 {
+          .button_arrow{
+              display: none;
+          }
+          .button_arrow.rigth{
+              display: none;
+          }
+        width: 732px;
+        height: 482px;
+        background: url(/assets/img/scroll_image2.png) no-repeat;
+        background-size: cover;
+      }
+      &__item2 {
+        margin-left: 20px;
+        width: 679px;
+        height: 482px;
+        background: url(/assets/img/scroll_image1.png) no-repeat;
+      }
+    }
+  }
+  .scrollbox__item3 {
+    grid-area: post-3;
+  
+    .text--upper {
+      font-family: "FuturaBookC";
+      font-size: 18px;
+      line-height: 29px;
+      margin-left: 5vw;
+      color: #ffffff;
+    }
+  }
+  .scrollbox__item4 {
+    grid-area: post-4;
+    .text--info {
+      margin-left: 5vw;
+      width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--column {
+        display: flex;
+        flex-direction: column;
+      }
+      &--row {
+        display: flex;
+        flex-direction: column;
+        &:last-child {
+          margin-top: 3vh;
+        }
+      }
+      .name_data {
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+  
+        color: #e3b873;
+      }
+      .data {
+        font-family: "FuturaBookC";
+        font-size: 15px;
+        line-height: 20px;
+  
+        color: #ffffff;
+      }
+    }
+  }
+  .scroll__arrow {
+    margin-top:70px;
+    margin-left: 5vw;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &--circle {
+      width: 30%;
+      display: flex;
+      justify-content: space-around;
+      a {
+        &:hover {
+          background: #ffffff;
+        }
+      }
+      .button_circle {
+        height: 9px;
+        width: 9px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+      }
+    }
+  }
+  
+  .rigth_arrow {
+    display: flex;
+    align-items: center;
+  
+    .svg_arrow {
+      fill: white;
+      transform: scale(-1, 1);
+  
+      &:hover {
+        stroke: black;
+        fill: black;
+      }
+    }
+  }
+  .left_arrow {
+    .svg_arrow {
+      fill: white;
+      &:hover {
+        stroke: black;
+        fill: black;
+      }
+    }
+  }
+  .scrollbox__item5 {
+    grid-area: post-5;
+    height: 10vh;
+    
+  }
