@@ -171,7 +171,11 @@
   margin-top: 4vh;
   height: 1000px;
   display: grid;
-  grid-template-areas: "post-1 post-2 " "post-3 post-2 " "post-4 post-2 " "post-5 post-2" "post-6 post-6";
+  grid-template-areas: "post-1 post-2 "
+ "post-3 post-2 "
+ "post-4 post-2 "
+ "post-5 post-2"
+ "post-6 post-6";
   grid-template-rows: 200px 140px;
   grid-template-columns: 0.7fr 1fr; }
 
@@ -562,7 +566,7 @@
     display: none;
     height: 54px;
     width: 54px;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -1464,7 +1468,10 @@ label {
     margin-top: 4vh;
     height: 1000px;
     display: grid;
-    grid-template-areas: "post-1 post-4 " "post-3 post-4 " "post-2 post-2 " "post-6 post-6";
+    grid-template-areas: "post-1 post-4 "
+ "post-3 post-4 "
+ "post-2 post-2 "
+ "post-6 post-6";
     grid-template-rows: 200px 140px 500px 800px;
     grid-template-columns: 0.7fr 1fr; }
     .main .wrapper .scrollbox .scroll_image .button_arrow {
@@ -1733,7 +1740,11 @@ label {
     justify-content: center; }
   .main .wrapper .scrollbox {
     margin: 0;
-    grid-template-areas: "post-1 post-1 " "post-3 post-3 " "post-2 post-2 " "post-4 post-4 " "post-6 post-6";
+    grid-template-areas: "post-1 post-1 "
+ "post-3 post-3 "
+ "post-2 post-2 "
+ "post-4 post-4 "
+ "post-6 post-6";
     grid-template-rows: 200px 40px 300px 300px;
     grid-template-columns: 1fr; }
     .main .wrapper .scrollbox .text--info {
