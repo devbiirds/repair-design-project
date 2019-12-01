@@ -1,0 +1,50 @@
+.mapsbox{
+    height: 953px;
+    background: url(/assets/img/background_mapsbox.png);
+    background-size:cover ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__item{
+        margin-top:80px;
+        &--description{
+            font-family: 'Yeseva One';
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+
+color: #E3B873;
+        }
+        &--icons{
+            margin-top:20px;
+            display: flex;
+            justify-content: center;
+            .iconbox{
+                width: 6%;
+            display: flex;
+            justify-content: space-around;
+        } 
+            .icon{ 
+                
+                height: 28px;
+                width: 28px;
+                border-radius: 50%;
+                background: #E3B873;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    &--maps{
+        margin:0 auto;
+        margin-top:40px;
+        width: 925px;
+        height: 465px;
+        background: url(/assets/img/maps.png);
+        background-size: contain ;
+    }
+}

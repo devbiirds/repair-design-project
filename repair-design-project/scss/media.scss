@@ -1,0 +1,660 @@
+@media screen and (max-width: 1270px) {
+  .main {
+    .wrapper {
+      .scrollbox__item1 {
+        .text--lower {
+          &::after {
+            display: none;
+          }
+        }
+      }
+      .headerbox {
+        &__item1 {
+          &__info {
+            &--call {
+              display: none;
+            }
+          }
+        }
+        &__itembg__textbox--text_lower {
+          font-size: 30px;
+        }
+        &__itembg__textbox--text_upper {
+          font-size: 17px;
+        }
+      }
+      .formbox {
+        display: none;
+      }
+      .gallery {
+        height: 660px;
+
+        &::before {
+          width: 40%;
+          position: absolute;
+          content: "We realize your wildest fantasies";
+          margin-left: 34%;
+          transform: translateY(-90px);
+          font-family: "Yeseva One";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 138.6%;
+          text-align: center;
+          text-transform: uppercase;
+
+          color: #e3b873;
+        }
+      }
+
+      .background_gallery {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .button_arrow {
+          display: flex;
+        }
+        margin: auto;
+        background: url(/assets/img/galletu_bg.png) no-repeat;
+        height: 100%;
+      }
+      .gallery__images {
+        display: none;
+      }
+      .gallery__list {
+        display: none;
+      }
+      .footerbox__item__navbar {
+        display: none;
+      }
+      .footerbox__item__info {
+        display: none;
+      }
+      .scrollbox--nav {
+        display: none;
+      }
+      .scroll__arrow {
+        display: none;
+      }
+      .scroll_image {
+        width: 100%;
+
+        margin: 0 auto;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        background-size: auto;
+      }
+      .scroll_image__item1 {
+        display: flex;
+        justify-content: space-between;
+        .text--lower {
+          &::after {
+            display: none;
+          }
+        }
+      }
+      .scroll_image__item2 {
+        display: none;
+      }
+
+      .scrollbox {
+        .scroll_image {
+          .button_arrow {
+            display: flex;
+            transform: translateY(200px);
+          }
+          .button_arrow.rigth {
+            display: flex;
+          }
+        }
+        margin-top: 4vh;
+        height: 1000px;
+        display: grid;
+        grid-template-areas:
+          "post-1 post-4 "
+          "post-3 post-4 "
+          "post-2 post-2 "
+          "post-6 post-6";
+        grid-template-rows: 200px 140px 500px 800px;
+        grid-template-columns: 0.7fr 1fr;
+      }
+      .before_types {
+        height: 1000px;
+        background: #131313;
+      }
+      .videobox {
+        background: #131313;
+        &__description--text {
+          font-size: 16px;
+          color: #fff;
+        }
+        &__form {
+          margin: 0;
+          .inputbox {
+            flex-direction: column;
+            .submit {
+              transform: translateY(80px);
+            }
+          }
+        }
+        &__video {
+          margin-top: 30px;
+          &::after {
+            margin-top: 40px;
+            content: "";
+            width: 55px;
+            height: 2px;
+            background: #e3b873;
+            border-radius: 30px;
+          }
+        }
+        &__form--input {
+          input {
+            &::-webkit-input-placeholder {
+              color: #ffffff;
+              background: #131313;
+            }
+          }
+          &::after {
+            content: "";
+            width: 500px;
+
+            height: 1px;
+            background: #fff;
+          }
+        }
+        &__check {
+          transform: translateY(-60px);
+          &--text {
+            color: #fff;
+          }
+        }
+      }
+      .titlebox.second_elem {
+        margin-top: 40px;
+      }
+      .item_types {
+        height: 2300px;
+      }
+      .typesbox {
+        height: 2000px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .listblock {
+          transform: translateX(-1px);
+        }
+        &__item {
+          height: 550px;
+          align-items: unset;
+        }
+      }
+
+      .project {
+        background: #131313;
+        .titlebox {
+          margin-top: 40px;
+          color: #fff;
+          background: #131313;
+          &__description {
+            color: #fff;
+            font-size: 18px;
+          }
+        }
+      }
+      .listwork {
+        justify-content: space-evenly;
+        height: 2000px;
+        .typesbox__item_second {
+          margin-bottom: 80px;
+        }
+      }
+      .client {
+        height: 1200px;
+        &__items {
+          height: 600px;
+        }
+        .form {
+          margin: 0;
+          width: 100%;
+          &_line {
+            align-items: center;
+            flex-direction: column;
+          }
+          .videobox__form--input {
+            margin-bottom: 30px;
+            width: 600px;
+            &::after {
+              content: "";
+              margin-top: 5px;
+              width: 500px;
+              height: 1px;
+              background: rgba(255, 255, 255, 0.15);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1142px) {
+  .main {
+    .wrapper {
+      .client {
+        height: 445px;
+        .titlebox {
+          display: none;
+        }
+        &__items {
+          display: none;
+        }
+      }
+      .work {
+        height: 1600px;
+      }
+      .our-work {
+        .our-work__list--items {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+        .list--items-row {
+          width: 100%;
+        }
+        flex-direction: column;
+        &__info {
+          width: 100%;
+          display: flex;
+          height: 400px;
+          justify-content: space-around;
+        }
+        &__list {
+          width: 100%;
+          justify-content: center;
+          height: 600px;
+        }
+        .our-work__list--image {
+          margin: 0 auto;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1018px) {
+  .main {
+    .wrapper {
+      .deleted {
+        display: none;
+      }
+      .headerbox {
+        &__item1 {
+          &__info {
+            &--call {
+              display: none;
+            }
+          }
+        }
+        &__itembg__textbox {
+          width: 100%;
+        }
+        &__itembg__textbox--text_lower {
+          font-size: 23px;
+        }
+        &__itembg__textbox--text_upper {
+          font-size: 18px;
+        }
+        &__itembg--buttons {
+          width: 400px;
+          margin-left: 80px;
+          flex-direction: column;
+          a {
+            margin-top: 10px;
+            width: 100%;
+          }
+        }
+      }
+      .team {
+        height: 1300px;
+        background: #131313;
+        &__description {
+          display: none;
+        }
+      }
+      .team__items {
+        height: 1500px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .client {
+        .form {
+          transform: none;
+        }
+        .videobox__check {
+          padding: 0;
+          transform: translateY(40px);
+        }
+        .button--call {
+          margin-top: 40px;
+        }
+      }
+      .mapsbox--maps {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+@media screen and (max-width: 805px) {
+  .main {
+    .wrapper {
+      .work {
+        display: none;
+      }
+      .team {
+        height: 1800px;
+        .team__composition {
+          height: 1800px;
+          transform: none;
+        }
+      }
+      .left_item {
+        display: none;
+      }
+      .scroll_down {
+        display: none;
+      }
+      .headerbox__item1__navbar {
+        display: none;
+      }
+      .headerbox__item1 {
+        justify-content: space-around;
+      }
+      .footer {
+        display: none;
+      }
+      .mapsbox {
+        flex-direction: column-reverse;
+      }
+      .mapsbox--maps {
+        width: 540px;
+        height: 455px;
+        background-size: contain;
+      }
+      .iconbox {
+        width: 100px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 494px) {
+  .main {
+    .wrapper {
+      .email__input {
+        &::after {
+          content: "";
+          margin-top: 5px;
+          width: 340px;
+          height: 1px;
+          background: #fff;
+        }
+      }
+      .client {
+        .submit {
+          width: 340px;
+        }
+        .form_item {
+          width: 100%;
+        }
+        .form {
+          .videobox__form--input {
+            width: 375px;
+            margin-left: 30px;
+            &::after {
+              content: "";
+              margin-top: 5px;
+              width: 340px;
+              height: 1px;
+              background: #fff;
+            }
+          }
+        }
+      }
+      .listwork {
+        height: 1800px;
+      }
+      .team__composition {
+        .titlebox {
+          height: 150px;
+          &__description {
+            font-size: 15px;
+          }
+        }
+      }
+      .team__items {
+        height: 1600px;
+      }
+      .typesbox {
+        &__item {
+          width: 340px;
+          .listblock {
+            width: 270px;
+          }
+        }
+      }
+      .titlebox.first_elem {
+        margin: 0;
+      }
+      .before_types {
+        height: 630px;
+      }
+      .submit {
+        width: 168%;
+      }
+      .videobox {
+        iframe {
+          width: 340px;
+          height: 207px;
+        }
+        &__description {
+          margin-left: 0;
+          margin-top: 0;
+          &::after {
+            content: "At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.";
+            font-family: "FuturaBookC";
+            font-size: 14px;
+            line-height: 169.8%;
+            /* or 24px */
+            text-align: center;
+
+            color: #ffffff;
+          }
+        }
+        &__description--text {
+          display: none;
+        }
+        .videobox__form--input {
+          margin-left: 10px;
+          width: 375px;
+          &::after {
+            content: "";
+            margin-top: 5px;
+            width: 340px;
+            height: 1px;
+            background: rgba(54, 54, 54, 0.3);
+          }
+          label {
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+
+      .scrollbox__item1 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .scrollbox__item3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text--upper {
+          width: 86%;
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+      .scrollbox__item4 {
+        display: flex;
+        justify-content: center;
+      }
+      .scrollbox {
+        margin: 0;
+        .text--info {
+          width: 90%;
+          margin: 0;
+          .name_data {
+            font-size: 14px;
+          }
+          .data {
+            font-size: 14px;
+          }
+        }
+        .scroll_image {
+          .button_arrow {
+            display: flex;
+            height: 36px;
+            width: 36px;
+            transform: translateY(100px);
+          }
+          .button_arrow.rigth {
+            display: flex;
+          }
+        }
+        grid-template-areas:
+          "post-1 post-1 "
+          "post-3 post-3 "
+          "post-2 post-2 "
+          "post-4 post-4 "
+          "post-6 post-6";
+        grid-template-rows: 200px 40px 300px 300px;
+        grid-template-columns: 1fr;
+      }
+      .scroll_image__item1 {
+        width: 340px;
+        height: 241px;
+      }
+      .project {
+        .titlebox__description {
+          font-size: 15px;
+        }
+      }
+      .gallery {
+        height: 226px;
+        &::before {
+          width: 65%;
+          margin-left: 19%;
+          font-size: 23px;
+        }
+       
+      }
+      .background_gallery {
+      
+        background-size:contain ;
+        .button_arrow {
+          height: 36px;
+          width: 36px;
+        }
+      }
+      .mapsbox__item {
+        margin: 0;
+      }
+      .mapsbox__item--description {
+        font-size: 18px;
+      }
+      .mapsbox {
+        height: 600px;
+        background: #131313;
+        &--maps {
+          width: 340px;
+          height: 255px;
+        }
+      }
+      .headerbox__itembg {
+        height: 476px;
+      }
+      .headerbox__itembg--buttons {
+        margin: 0;
+      }
+      .header{
+          height: 550px;
+          .buttons--that{
+              margin-top:30px;
+              width: 340px;
+          }
+        }
+        .headerbox__item1__logotext{
+            font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+
+color: #E3B873;
+
+        }
+        .headerbox__item1__info{
+            width: 30%;
+        } 
+        .headerbox__item1__info--tell{
+            font-size: 12px;
+line-height: 15px;
+text-align: right;
+
+color: #FFFFFF;
+        }
+        .headerbox__itembg--buttons{
+            width: 375px;
+            display: flex;
+            align-items: center;
+        }
+      .headerbox__itembg__textbox--text_lower {
+        p{
+            display: none;
+        }
+        &::after{
+           
+            content: "Turnkey Repair in the city of Rostov-on-Don";
+            width: 345px;
+            height: 80px;
+            font-family: 'Yeseva One';
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 132.83%;
+/* or 31px */
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+        }
+      }
+      .headerbox__itembg__textbox--text_upper {
+        &::after {
+          content: "Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work";
+          width: 339px;
+          height: 94px;
+          font-family: "FuturaBookC";
+          font-size: 18px;
+          line-height: 135.84%;
+          color: #ffffff;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}

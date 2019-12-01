@@ -1,0 +1,192 @@
+.header {
+    display: flex;
+    height: 100vh;
+    max-height: 837px;
+  
+    .left_item {
+      font-family: "FuturaDemiC";
+      font-size: 14px;
+      line-height: 16px;
+  
+      color: #e3b873;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        transform: rotate(90deg);
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        height: 51px;
+        margin-top: 80px;
+        border: 0.5px solid #e3b873;
+      }
+    }
+    .headerbox {
+      width: 100%;
+      height: 100%;
+      &__item1 {
+        height: 10vh;
+  
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logotext {
+          font-family: "FuturaDemiC";
+          font-size: 14px;
+          line-height: 16px;
+          text-transform: uppercase;
+          color: #e3b873;
+  
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        &__navbar {
+          width: 50%;
+  
+          display: flex;
+          justify-content: space-between;
+          font-family: "FuturaBookC";
+          font-size: 14px;
+          line-height: 16px;
+          color: #fff;
+          .navbar__item {
+            &:hover {
+              color: #e3b873;
+            }
+          }
+        }
+  
+        &__info {
+          width: 25%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          &--tell {
+            font-family: "FuturaDemiC";
+            font-size: 14px;
+            line-height: 16px;
+            color: #e3b873;
+          }
+          &--call {
+            
+            height: 37px;
+            width: 161px;
+            font-family: "FuturaDemiC";
+            font-size: 13px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            background: #e3b873;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+  
+            &:hover {
+              color: black;
+              box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+            }
+          }
+        }
+      }
+      .scroll_down{
+        transform: translate(-77px,-50px);
+        position: absolute;
+        width: 247px;
+        height: 97px;
+        background: #131313;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        p{
+          font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+        }
+        img{
+          margin-left:10px;
+        }
+      }
+      &__itembg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+        width: 100%;
+        height: 90%;
+        max-height: 707px;
+  
+        background: url(/assets/img/banner_image.png) no-repeat center;
+       
+        &__textbox {
+          height: 35%;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+  
+          &--text_lower {
+            width: 80%;
+  
+            display: flex;
+            justify-content: start;
+            font-family: "Yeseva One";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 53px;
+            text-transform: uppercase;
+            color: #ffffff;
+            align-self: center;
+          }
+          &--text_upper {
+            width: 80%;
+  
+            display: flex;
+            justify-content: start;
+            align-self: center;
+            font-family: "FuturaBookC";
+            font-size: 22px;
+            line-height: 30px;
+            color: #ffffff;
+          }
+        }
+        &--buttons {
+          width: 47%;
+          margin-top: 5vh;
+          display: flex;
+          justify-content: space-evenly;
+          text-transform: uppercase;
+          font-family: "FuturaDemiC";
+          font-size: 13px;
+          line-height: 15px;
+          color: #ffffff;
+          .buttons--that {
+            width: 207px;
+            height: 51px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffffff;
+            border-radius: 2px;
+            &:hover {
+              background: #e3b873;
+              box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+              border: 1px solid rgba(0, 0, 0, 0.3);
+            }
+          }
+        }
+      }
+    }
+  }

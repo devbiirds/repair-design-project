@@ -1,0 +1,39 @@
+@import "fonts";
+@import'./header.scss';
+@import'./scrollbox.scss';
+@import'./titlebox.scss';
+@import'./videobox.scss';
+@import'./gallery.scss';
+@import'./form.scss';
+@import './design_project.scss';
+@import './typesbox.scss';
+@import './listwork.scss';
+@import './our-work.scss';
+@import './team.scss';
+@import './clients.scss';
+@import'./mapsbox.scss';
+@import './footer.scss';
+@import'./media.scss';
+
+a {
+  text-decoration: none;
+  color: white;
+}
+svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  overflow: hidden;
+  background: #131313;;
+}
